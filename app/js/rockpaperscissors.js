@@ -96,7 +96,12 @@ function playToFive() {
     var playerWins = 0;
     var computerWins = 0;
 
-    // I don't know how to do this.
+    while ((computerWins > 5)&&(playerWins > 5)){
+        if (getWinner(playerMove,computerMove) == 'player'){
+            playerWins++;
+        }
+        else {computerWins++;}
+    }
 
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     /* YOUR CODE HERE */
